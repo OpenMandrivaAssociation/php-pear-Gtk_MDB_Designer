@@ -35,14 +35,6 @@ schema, it features:
 - saves to any supported database SQL create tables files
 - screenshots at http://devel.akbkhome.com/Gtk_MDB/.
 
-Future enhancements:
-- real MDB schema exports
-- relationships = with lines etc.
-
-Note: the primary aim is to generate SQL files, (so that I can get my
-work done) however it is eventually planned to support MDB schemas
-fully... - just a matter of time.
-
 In PEAR status of this package is: %{_status}.
 
 %prep
