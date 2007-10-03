@@ -6,12 +6,13 @@
 Summary:	%{_pearname} - an GTK+ Database schema designer
 Name:		php-pear-%{_pearname}
 Version:	0.1
-Release:	%mkrel 7
+Release:	%mkrel 8
 License:	PHP License
 Group:		Development/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tar.bz2
 URL:		http://pear.php.net/package/Gtk_MDB_Designer/
-Requires:	php4-gtk
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tar.bz2
+Patch0:		php-pear-Gtk_MDB_Designer-php-gtk2.diff
+Requires:	php-gtk2
 Requires(post): php-pear
 Requires(preun): php-pear
 Requires:	php-pear
@@ -59,6 +60,8 @@ done
 # strip away annoying ^M
 find -type f | grep -v ".gif" | grep -v ".png" | grep -v ".jpg" | xargs dos2unix -U
 
+%patch0 -p0
+
 %install
 rm -rf %{buildroot}
 
@@ -97,7 +100,4 @@ rm -rf %{buildroot}
 %defattr(644,root,root,755)
 %{_datadir}/pear/%{_class}/%{_subclass}/Designer.php
 %{_datadir}/pear/%{_class}/%{_subclass}/Designer
-
 %{_datadir}/pear/packages/%{_pearname}.xml
-
-
