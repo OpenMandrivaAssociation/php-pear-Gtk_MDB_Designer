@@ -6,7 +6,7 @@
 Summary:	%{_pearname} - an GTK+ Database schema designer
 Name:		php-pear-%{_pearname}
 Version:	0.1
-Release:	%mkrel 10
+Release:	%mkrel 11
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/Gtk_MDB_Designer/
