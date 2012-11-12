@@ -1,0 +1,24 @@
+diff -Naur -x '*~' php-pear-Gtk_MDB_Designer-0.1/Gtk_MDB_Designer-0.1/Designer.php php-pear-Gtk_MDB_Designer-0.1-php-gtk2/Gtk_MDB_Designer-0.1/Designer.php
+--- php-pear-Gtk_MDB_Designer-0.1/Gtk_MDB_Designer-0.1/Designer.php	2003-03-22 16:40:56.000000000 +0100
++++ php-pear-Gtk_MDB_Designer-0.1-php-gtk2/Gtk_MDB_Designer-0.1/Designer.php	2009-12-14 21:18:50.000000000 +0100
+@@ -84,7 +84,7 @@
+     function loadInterface() {
+         
+         if (!extension_loaded('php-gtk')) {
+-             dl('php_gtk.' .PHP_SHLIB_SUFFIX    );
++             dl('php_gtk2.' .PHP_SHLIB_SUFFIX    );
+         }
+         $this->glade = new GladeXML(dirname(__FILE__).'/Designer/Designer.glade');
+         $window = $this->glade->get_widget('window');
+diff -Naur -x '*~' php-pear-Gtk_MDB_Designer-0.1/package.xml php-pear-Gtk_MDB_Designer-0.1-php-gtk2/package.xml
+--- php-pear-Gtk_MDB_Designer-0.1/package.xml	2003-03-22 18:47:02.000000000 +0100
++++ php-pear-Gtk_MDB_Designer-0.1-php-gtk2/package.xml	2009-12-14 21:19:13.000000000 +0100
+@@ -44,7 +44,7 @@
+       <dep type="pkg" rel="ge" version="1.0.1">XML_Parser</dep>
+     </deps>
+     <filelist>
+-      <file role="php" baseinstalldir="Gtk/MDB" md5sum="f61d64f9f88d2ced6a010712dfa1af7f" name="Designer.php"/>
++      <file role="php" baseinstalldir="Gtk/MDB" md5sum="5e97fd6b46c04f3c065b20879501471b" name="Designer.php"/>
+       <file role="php" baseinstalldir="Gtk/MDB" md5sum="871ed8a2304a2b72f30585a9d325f6c5" name="Designer/Parser.php"/>
+       <file role="php" baseinstalldir="Gtk/MDB" md5sum="42217fd072bdb2ee2cf8d58740f30942" name="Designer/Table.php"/>
+       <file role="php" baseinstalldir="Gtk/MDB" md5sum="68df4a2ebb3d3bfdcabdb57e4c3028bc" name="Designer/Column.php"/>
