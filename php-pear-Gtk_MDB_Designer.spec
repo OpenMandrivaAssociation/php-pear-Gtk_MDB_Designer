@@ -5,7 +5,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	0.1
-Release:	16
+Release:	17
 Summary:	An GTK+ Database schema designer
 
 
