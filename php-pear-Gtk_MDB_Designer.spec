@@ -11,7 +11,7 @@ Summary:	An GTK+ Database schema designer
 
 License:	PHP License
 Group:		Development/PHP
-URL:		http://pear.php.net/package/Gtk_MDB_Designer/
+URL:		https://pear.php.net/package/Gtk_MDB_Designer/
 Source0:	http://download.pear.php.net/package/%{upstream_name}-%{version}.tar.bz2
 Patch0:		php-pear-Gtk_MDB_Designer-php-gtk2.patch
 Requires:	php-gtk2
